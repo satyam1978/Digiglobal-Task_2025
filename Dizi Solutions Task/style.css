@@ -1,0 +1,611 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff; /* softer gray for cleaner look */
+  color: #333;
+  line-height: 1.6;
+}
+
+.nvb{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Branding */
+.navbar-brand {
+  padding-left: 1.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.logo {
+  max-width: 200px; /* fixed size instead of percentage */
+  height: auto;
+}
+
+/* Search Bar */
+.custom-search {
+  width: 460px !important;
+  height: 44px;
+  margin: 0 15px 0 8px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.custom-search:focus {
+  border: 2px solid #007bff;
+  outline: none;
+  box-shadow: none;
+}
+
+.icon {
+  position: absolute;
+  top: 41%;
+  left: 26%;
+  pointer-events: none;
+}
+/* Contact Info Navigation */
+.custom-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-right: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.custom-nav .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.custom-nav .nav-item:hover {
+  color: #007bff; /* subtle hover effect */
+  cursor: pointer;
+}
+
+.custom-nav .nav-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.custom-nav .nav-link:hover {
+  color: #fff;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-item .bk {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
+.carousel-item h5 span {
+  color: #cecbcb;
+}
+
+/* For Enquiry Form */
+ /* Button */
+    .open-btn {
+      background: #d9534f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 50px;
+      font-size: 16px;
+    }
+
+    /* Overlay */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Modal content */
+    .modal-content {
+      background: #fff;
+      margin: 6.5% auto;
+      padding: 40px;
+      border-radius: 10px;
+      width: 550px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* Close button */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #d9534f;
+      cursor: pointer;
+    }
+
+    /* Form inputs */
+    .modal-content input,
+    .modal-content select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    /* Submit button */
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: #d9534f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #c9302c;
+    }
+/* Enquiry Form End */
+
+.prv-icon,
+.nxt-icon {
+  border: 1px solid #0a0a0a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  background-color: #0a0a0a;
+  visibility: visible !important;
+}
+
+.prv-icon {
+  position: absolute;
+  top: 55%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.nxt-icon {
+  position: absolute;
+  top: 55%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.bg {
+  background-color: #f5f2f2;
+}
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-slider {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.holiday {
+  font-weight: bold;
+}
+
+.h {
+  border-bottom: 4px solid #dc3545;
+  padding-bottom: 0.5rem;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.holiday-card {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.holiday-card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease-in-out;
+}
+
+.holiday-card .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.holiday-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.phon {
+  border: 2px solid rgb(221, 7, 7);
+  padding: 0.3rem 0.3rem;
+  margin-right: 0.8rem;
+  border-radius: 12px;
+  color: rgb(221, 7, 7);
+}
+
+.req {
+  width: 80%;
+  padding-bottom: 0.5rem;
+}
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.carousel-btn.prev {
+  left: 2px;
+}
+
+.carousel-btn.next {
+  right: 2px;
+}
+
+.deal-carousel-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.deal-card-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.deal-card-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.deal-card-item:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease-in-out;
+}
+
+.pho {
+  margin-left: 0 !important;
+  border: 2px solid rgb(221, 7, 7);
+  padding: 0.3rem 0.4rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  border-bottom-left-radius: 12px;
+}
+
+.hp {
+  width: 84%;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.deal-card-item .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.deal-card-item img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.deal-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.deal-btn.prev-deal {
+  left: 2px;
+}
+
+.deal-btn.next-deal {
+  right: 2px;
+}
+
+.deal-carousel-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.deal-card-track2 {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.deal-card-item2 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.deal-card-item2 .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.deal-card-item2 img {
+  border-radius: 15px;
+  height: 42vh;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.deal-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.capp {
+  opacity: 0;
+}
+
+.deal-card-item2:hover img,
+.deal-card-item2:hover .deal-caption {
+  transform: scale(1.08);
+  cursor: pointer;
+  .capp {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.deal-btn2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.deal-btn2.prev-deal2 {
+  left: 2px;
+}
+
+.deal-btn2.next-deal2 {
+  right: 2px;
+}
+
+/* Trip */
+
+.holiday-carousel-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.holiday-card-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.holiday-card-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.holiday-card-item .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.holiday-card-item img {
+  border-radius: 15px;
+  height: 42vh;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.holiday-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.holiday-caption .capp {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.holiday-card-item:hover img,
+.holiday-card-item:hover .holiday-caption {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.holiday-card-item:hover .holiday-caption .capp {
+  opacity: 1;
+}
+
+.holiday-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.holiday-btn.prev-holiday {
+  left: 2px;
+}
+
+.holiday-btn.next-holiday {
+  right: 2px;
+}
+
+.footer {
+  border-top: 2px solid rgb(221, 7, 7);
+}
+
+/* Social Media Links: */
+
+.twt,
+.fbk,
+.ig,
+.yt {
+  color: white;
+  background-color: #0a0a0a;
+  width: 40px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 50%;
+}
+
+.fbk {
+  background-color: rgb(5, 50, 247);
+}
+
+.ig {
+  background-color: rgb(200, 4, 92);
+}
+
+.yt {
+  background-color: rgb(255, 0, 0);
+}
+
+.fbk:hover,
+.twt:hover,
+.ig:hover,
+.yt:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icn {
+  width: 50%;
+}
+
+.chaticon {
+  padding: 0.8rem 1rem;
+  background-color: #dc3545;
+  position: fixed;
+  top: 88%;
+  right: 1%;
+  z-index: 1000;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 50%;
+}
+
+.topbtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.topbtn:hover {
+  color: #dc3545;
+  background-color: #faf9f9;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+
+.pr, .vw{
+  padding: .4rem;
+  text-align: center;
+  border: .2px solid #ef0505;
+}
+
+.vw:hover{
+  color: #ccc;
+  border: .2px solid #ccc;
+  transition: .3s ease-in-out;
+}
+
+
+

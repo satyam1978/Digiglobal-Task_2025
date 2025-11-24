@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximtrip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top nvb">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html"><img src="image/logo.jpeg" alt="brand-logo" class="logo"></a>
+
+            <form class="d-flex" role="search">
+                <input class="form-control custom-search" type="search" placeholder="Search"
+                    aria-label="Search" id="searchBox">
+                <i class="fa fa-search icon text-secondary"></i>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="navbar-nav custom-nav">
+                <li class="nav-item">
+                    <i class="fa-solid fa-phone text-secondary"></i><span class="ms-2 text-secondary">+91-
+                        9797996205</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-envelope text-secondary"></i><span
+                        class="ms-2 text-secondary">holiday@maximtrip.in</span>
+                </li>
+                <li class="nav-item contact">
+                    <a class="nav-link " href="ContactUs.html"><i class="fa-brands fa-telegram text-danger fs-2"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+
+    <div id="carouselExample" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="image/1.jpeg" class="" alt="Slide 1">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="fw-bold">Kashmir A Frozen Dream Vacation</h1>
+                    <span
+                        class="bk">........................................................................................................................................................................................................</span>
+                    <h4 class="mb-1">8 Days/ 7 Nights</h4>
+                    <span
+                        class="bk">........................................................................................................................................................................................................</span>
+                    <h5 class="my-4">24199 &nbsp; <span class="text-decoration-line-through">26199</span></h5>
+                    <a href="#" class="btn topbtn mb-3">
+                        <h4 class="openModalBtn">Connect with Expert</h4>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="image/2.jpeg" class="" alt="Slide 2">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="fw-bold">Kashmir Escape At Smart Prices</h1>
+                    <span
+                        class="bk">........................................................................................................................................................................................................</span>
+                    <h4 class="mb-1">7 Days/ 6 Nights</h4>
+                    <span
+                        class="bk">........................................................................................................................................................................................................</span>
+                    <h5 class="my-4">14199 &nbsp; <span class="text-decoration-line-through">16199</span></h5>
+                    <a href="#" class="btn topbtn mb-3">
+                        <h4 class="openModalBtn">Connect with Expert</h4>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="image/3.jpeg" class="" alt="Slide 3">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="fw-bold">Kashmir Unplugged</h1>
+                    <span
+                        class="bk">........................................................................................................................................................................................................</span>
+                    <h4 class="mb-1">6 Days/ 5 Nights</h4>
+                    <span
+                        class="bk">........................................................................................................................................................................................................</span>
+                    <h5 class="my-4">16799 &nbsp; <span class="text-decoration-line-through">19799</span></h5>
+                    <a href="#" class="btn topbtn mb-3">
+                        <h4 class="openModalBtn">Connect with Expert</h4>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <img src="image/4.jpeg" class="" alt="Slide 4">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="fw-bold">Color Of Kashmir</h1>
+                    <span
+                        class="bk">........................................................................................................................................................................................................</span>
+                    <h4 class="mb-1">5 Days/ 4 Nights</h4>
+                    <span
+                        class="bk">........................................................................................................................................................................................................</span>
+                    <h5 class="my-4">13500 &nbsp; <span class="text-decoration-line-through">15000</span></h5>
+                    <a href="#" class="btn topbtn mb-3">
+                        <h4 class="openModalBtn">Connect with Expert</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enquiry Form -->
+
+    <div id="enquiryModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="modal-header">Quick Enquiry</div>
+
+      <form>
+        <input type="text" placeholder="Destination *" required>
+        <input type="date" placeholder="dd/mm/yyyy" required>
+        <select required>
+          <option value="">Select Travellers</option>
+          <option value="1">1 Traveller</option>
+          <option value="2">2 Travellers</option>
+          <option value="3">3 Travellers</option>
+          <option value="4+">4+ Travellers</option>
+        </select>
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Enter Mobile no." required>
+        <input type="email" placeholder="Email Address" required>
+        <button type="submit" class="submit-btn">✈ Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+        <div class="chatbot">
+            <a href="#"></a><span class="chaticon animate__animated animate__pulse animate__infinite animate__slow"><i class="fa-regular fa-comment"></i></span>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="prv-icon">
+                <i class="fa-solid fa-chevron-left "></i>
+                <span class="visually-hidden">Previous</span>
+            </span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="nxt-icon">
+                <i class="fa-solid fa-chevron-right "></i>
+                <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Holiday Category Section -->
+
+    <div class="container-fluid bg px-4 my-5 ">
+        <h2 class="mb-5 text-dark holiday"><span class="text-danger h">Holiday</span> Category</h2>
+
+        <div class="carousel-container">
+            <button class="carousel-btn prev">&#10094;</button>
+            <div class="card-slider" id="cardSlider">
+
+                <!-- Card 1 -->
+                <div class="holiday-card">
+                    <div class="card">
+                        <img src="image/ladak.jpeg" class="card-img-top " alt="" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Leh Ladakh Tour Packages</h5>
+                            <span class="phon"><i class=" fa-solid fa-phone"></i></span><button
+                                class="btn btn-danger req">Request Callback</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="holiday-card">
+                    <div class="card">
+                        <img src="image/kashmir2.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Kashmir Tour Packages</h5>
+                            <span class="phon"><i class=" fa-solid fa-phone"></i></span><button
+                                class="btn btn-danger req">Request Callback</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="holiday-card">
+                    <div class="card">
+                        <img src="image/kashmir3.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Kashmir Honeymoon Packages</h5>
+                            <span class="phon"><i class=" fa-solid fa-phone"></i></span><button
+                                class="btn btn-danger req">Request Callback</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="holiday-card">
+                    <div class="card">
+                        <img src="image/kashmir4.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Kashmir Family Tour Packages</h5>
+                            <span class="phon"><i class=" fa-solid fa-phone"></i></span><button
+                                class="btn btn-danger req">Request Callback</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="holiday-card">
+                    <div class="card">
+                        <img src="image/kashmir.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Kashmir Group Tour Packages</h5>
+                            <span class="phon"><i class=" fa-solid fa-phone"></i></span><button
+                                class="btn btn-danger  req">Request Callback</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </div>
+
+    
+    <!-- PKG -->
+
+    <div class="container-fluid  px-4 my-5">
+    <h2 class="mb-5 text-dark holiday"><span class="text-danger h">Holiday</span> Package</h2>
+    
+        <div class="deal-carousel-box">
+            <button class="deal-btn prev-deal">&#10094;</button>
+            <div class="deal-card-track" id="dealCardTrack">
+    
+                <!-- Card 1 -->
+                <div class="deal-card-item">
+                    <div class="card">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <img src="image/4.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold">Valley Of Wonders</p>
+                            <p class="mb-1 text-muted"><i class="bi bi-clock"></i> 4 Days / 3 Nights</p>
+                            <p class="mb-2 text-muted"><i class="bi bi-geo-alt"></i> Kashmir</p>
+                            <div class=" pt-2 mx-0 px-0">
+                                <div class="row  p-2">
+                                    <div class="col-6 pr">
+                                        <span class="">Rs.12599</span>
+                                    </div>
+                                    <div class="col-6 vw ">
+                                        <a href="#" class="nav-link">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pb-0">
+                            <span class="pho"><i class=" fa-solid fa-phone"></i></span><button class="btn btn-danger hp"> Request Callback</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="deal-card-item">
+                    <div class="card">
+                        <img src="image/1.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold">Kashmir A Frozen Dream Vacation</p>
+                            <p class="mb-1 text-muted"><i class="bi bi-clock"></i> 8 Days / 7 Nights</p>
+                            <p class="mb-2 text-muted"><i class="bi bi-geo-alt"></i> Kashmir</p>
+                            <div class=" pt-2 mx-0 px-0">
+                                <div class="row  p-2">
+                                    <div class="col-6 pr">
+                                        <span class="">Rs.12599</span>
+                                    </div>
+                                    <div class="col-6 vw ">
+                                        <a href="#" class="nav-link">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pb-0">
+                            <span class="pho"><i class=" fa-solid fa-phone"></i></span><button class="btn btn-danger  hp"> Request Callback</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="deal-card-item">
+                    <div class="card">
+                        <img src="image/2.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold">Kashmir Escapes At Smart Prices</p>
+                            <p class="mb-1 text-muted"><i class="bi bi-clock"></i> 7 Days / 6 Nights</p>
+                            <p class="mb-2 text-muted"><i class="bi bi-geo-alt"></i> Kashmir</p>
+                            <div class=" pt-2 mx-0 px-0">
+                                <div class="row  p-2">
+                                    <div class="col-6 pr">
+                                        <span class="">Rs.12599</span>
+                                    </div>
+                                    <div class="col-6 vw ">
+                                        <a href="#" class="nav-link">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pb-0">
+                            <span class="pho"><i class=" fa-solid fa-phone"></i></span><button class="btn btn-danger hp"> Request Callback</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="deal-card-item">
+                    <div class="card">
+                        <img src="image/3.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="fw-bold">Kashmir Escapes At Smart Prices</p>
+                            <p class="mb-1 text-muted"><i class="bi bi-clock"></i> 7 Days / 6 Nights</p>
+                            <p class="mb-2 text-muted"><i class="bi bi-geo-alt"></i> Kashmir</p>
+                            <div class=" pt-2 mx-0 px-0">
+                                <div class="row  p-2">
+                                    <div class="col-6 pr">
+                                        <span class="">Rs.12599</span>
+                                    </div>
+                                    <div class="col-6 vw ">
+                                        <a href="#" class="nav-link">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pb-0">
+                            <span class="pho mb-0"><i class=" fa-solid fa-phone"></i></span><button class="btn btn-danger hp"> Request
+                                Callback</button>
+                        </div>
+                    </div>
+                </div>
+    
+                
+    
+            </div>
+            <button class="deal-btn next-deal">&#10095;</button>
+        </div>
+    </div>
+    
+    <!-- Popular Destinations -->
+
+    <div class="container-fluid bg px-4 my-5">
+        <h2 class="mb-5 text-dark holiday"><span class="text-danger h">Popular</span> Destinations</h2>
+
+        <div class="deal-carousel-box">
+            <button class="deal-btn2 prev-deal2">&#10094;</button>
+            <div class="deal-card-track2" id="dealCardTrack2">
+    
+                <!-- Card 1 -->
+                <div class="deal-card-item2">
+                    <div class="card">
+                        <img src="image/srinagar.jpeg" alt="">
+                        <div class="deal-caption"><h5>Places to visit in Srinagar</h5>
+                            <p class="capp">Places to visit in Srinagar</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="deal-card-item2">
+                    <div class="card">
+                        <img src="image/pahalgam.jpeg" alt="">
+                        <div class="deal-caption"><h5>Places to visit in Pahalgam</h5>
+                            <p class="capp">Places to visit in Pahalgam</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="deal-card-item2">
+                    <div class="card">
+                        <img src="image/sonmarg.jpeg" alt="">
+                        <div class="deal-caption"><h5>Places to visit in Sonmarg</h5>
+                            <p class="capp">Places to visit in Sonmarg</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="deal-card-item2">
+                    <div class="card">
+                        <img src="image/gulmarg.jpeg" alt="">
+                        <div class="deal-caption"><h5>Places to visit in Gulmarg</h5>
+                            <p class="capp">Places to visit in Gulmarg</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <button class="deal-btn2 next-deal2">&#10095;</button>
+        </div>
+
+        <!-- Trip -->
+
+        <h2 class="mb-5 text-dark holiday mt-5"><span class="text-danger h">Travel</span> Blogs</h2>
+        
+            <div class="holiday-carousel-box">
+                <button class="holiday-btn prev-holiday">&#10094;</button>
+                <div class="holiday-card-track" id="holidayCardTrack">
+        
+                    <!-- Card 1 -->
+                    <div class="holiday-card-item">
+                        <div class="card">
+                            <a href="kashmirtourpackages.html">
+                            <img src="kashmirepackages.png" alt=""></a>
+                            <div class="holiday-caption">
+                                <span>Kashmir Tour Packages</span>
+                                <!-- <p class="capp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 2 -->
+                    <div class="holiday-card-item">
+                        <div class="card">
+                            <img src="honeymoonpackages.png" alt="">
+                            <div class="holiday-caption">
+                                <span>Kashmir Honeymoon Packages</span>
+                                <!-- <p class="capp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div class="holiday-card-item">
+                        <div class="card">
+                            <img src="budgetkashmir.png" alt="">
+                            <div class="holiday-caption">
+                                <span>Budget Kashmir Tour Packages</span>
+                                <!-- <p class="capp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 4 -->
+                    <div class="holiday-card-item">
+                        <div class="card">
+                            <img src="budgethoneymoon.png" alt="">
+                            <div class="holiday-caption">
+                                <span>Budget Kashmir Honeymoon Packages</span>
+                                <!-- <p class="capp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 5 -->
+                    <!-- <div class="holiday-card-item">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/1020/400/200" alt="">
+                            <div class="holiday-caption">
+                                <span>Safari Adventure</span>
+                                <p class="capp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+         -->
+                </div>
+                <button class="holiday-btn next-holiday">&#10095;</button>
+            </div>
+    </div>
+
+    <div class="container-fluid footer">
+     <div class="row mt-4 ms-0">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-3 text-center p-2">
+                    <p class="fw-bold">Follow Us On:</p>
+                </div>
+                <div class="col-6 icn">
+                    <span> <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f  fbk"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter  twt "></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram ig"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube  yt"></i></a>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p class="text-end">Copyright © 2021-2025 <span class="fw-bold">MaximTrip</span>. All Right Reserved</p>
+        </div>
+     </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+</html>
